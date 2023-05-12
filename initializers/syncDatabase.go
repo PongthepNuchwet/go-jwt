@@ -1,7 +1,7 @@
 package initializers
 
-import "github.com/PongthepNuchwet/go-jwt/model"
+import "github.com/PongthepNuchwet/go-jwt/models"
 
 func SyncDatabase() {
-	DB.AutoMigrate(&model.User{})
+	DB.AutoMigrate(&models.User{})
 }
